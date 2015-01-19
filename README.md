@@ -17,7 +17,7 @@ For more information, check the [editorconfig][2] and [jshint][3] project pages.
  - Tab size is 2 spaces
  - Indentation is 1 tab size (2 spaces)
  - Continuation indent is 1 tab size
- - Multiple variable declaration MUST BE wrapped and aligned (4 spaces, usually)
+ - Multiple variable declaration MUST BE chopped and aligned (4 spaces, usually)
  - Empty lines MUST not keep indents
  - Blank lines CAN be added for readability
  - 2 consecutive blank lines are allowed
@@ -189,8 +189,8 @@ We use a soft wrap of 120 characters long. Also:
   - Comments MAY wrap at right margin
   - Function declaration arguments MAY wrap if long and aligned when multiline.
   - Function call arguments MAY wrap if long and aligned when multiline.
-  - Object literals MUST ALWAYS be wrapped
-  - Multiple variable declaration MUST BE wrapped.
+  - Object literals MUST ALWAYS BE chopped
+  - Multiple variable declaration MUST BE chopped and aligned (4 spaces, usually)
 
 
 ```javascript
