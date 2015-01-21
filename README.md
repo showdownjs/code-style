@@ -6,7 +6,7 @@ Code-style for showdown and related projects.
 ## Introduction
 In this file, you can check the the code styling and rules for showdown and it's related projects. It's roughly based on
 [Google JavaScript Style Guide][1]. Using these rules is strongly advisable when contributing to showdown projects.
-In this repository you can also find a .editorconfig file and a .jshintrc file that you can use to automatically enforce
+In this repository you can also find a [.editorconfig](https://github.com/showdownjs/code-style/blob/master/.editorconfig), [.jshintrc](https://github.com/showdownjs/code-style/blob/master/.jshintrc) and [.jscs.json](https://github.com/showdownjs/code-style/blob/master/.jscs.json) file that you can use to automatically enforce
 these rules (if your IDE supports it).
 
 For more information, check the [editorconfig][2] and [jshint][3] project pages.
