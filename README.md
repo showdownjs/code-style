@@ -6,10 +6,10 @@ Code-style for showdown and related projects.
 ## Introduction
 In this file, you can check the the code styling and rules for showdown and it's related projects. It's roughly based on
 [Google JavaScript Style Guide][1]. Using these rules is strongly advisable when contributing to showdown projects.
-In this repository you can also find a [.editorconfig](https://github.com/showdownjs/code-style/blob/master/.editorconfig), [.jshintrc](https://github.com/showdownjs/code-style/blob/master/.jshintrc) and [.jscs.json](https://github.com/showdownjs/code-style/blob/master/.jscs.json) file that you can use to automatically enforce
+In this repository you can also find a [.editorconfig][2], [.jshintrc][3] and [.jscs.json][4] file that you can use to automatically enforce
 these rules (if your IDE supports it).
 
-For more information, check the [editorconfig][2] and [jshint][3] project pages.
+For more information, check the [editorconfig][5], [jshint][6] and [jscs][7] project pages.
 
 
 ## Tabs and indentation
@@ -208,5 +208,9 @@ function foo(a, b, c, d, bla,
 ```
 
 [1]: https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
-[2]: http://editorconfig.org/
-[3]: http://jshint.com/
+[2]: https://github.com/showdownjs/code-style/blob/master/.editorconfig
+[3]: https://github.com/showdownjs/code-style/blob/master/.jshintrc
+[4]: https://github.com/showdownjs/code-style/blob/master/.jscs.json
+[5]: http://editorconfig.org/
+[6]: http://jshint.com/
+[7]: http://jscs.info/
