@@ -230,7 +230,7 @@ First line cannot be longer than 70 characters, second line is always blank and
 other lines should be wrapped at 80 characters. The type and scope should
 always be lowercase as shown below.
 
-### Allowed `<type>` values:
+#### Allowed `<type>` values:
 
 - **feat** (new feature for the user, not a new feature for build script)
 - **fix** (bug fix for the user, not a fix to a build script)
@@ -240,7 +240,7 @@ always be lowercase as shown below.
 - **test** (adding missing tests, refactoring tests; no production code change)
 - **chore** (updating grunt tasks etc; no production code change)
 
-### Example `<scope>` values:
+#### Example `<scope>` values:
 
 - list-parser
 - loader
@@ -253,7 +253,7 @@ to assign to a single component), in which case the parentheses are
 omitted.
 
 
-## Message body
+### Message body
 * uses the imperative, present tense: “change” not “changed” nor “changes”
 * includes motivation for the change and contrasts with previous behavior
 
@@ -263,9 +263,9 @@ For more info about message body, see:
 * http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 
 
-## Message footer
+### Message footer
 
-### Referencing issues
+#### Referencing issues
 Closed issues should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
 ```bash
 Closes #234
@@ -274,7 +274,7 @@ or in case of multiple issues:
 ```bash
 Closes #123, #245, #992
 ```
-### Breaking changes
+#### Breaking changes
 
 All breaking changes have to be mentioned in footer with the
 description of the change, justification and migration notes.
