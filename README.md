@@ -4,8 +4,7 @@ Shodown Code Style and Orientations
 Code-style for showdown and related projects.
 
 ## Introduction
-In this file, you can check the the code styling and rules for showdown and it's related projects. It's roughly based on
-[Google JavaScript Style Guide][1]. Using these rules is strongly advisable when contributing to showdown projects.
+In this file, you can check the the code styling, rules and commit message convetions for showdown and it's related projects. It's roughly based on [Google JavaScript Style Guide][1] and [AngularJS Git Commit Msg Convention][8]. Using these rules is strongly advisable when contributing to showdown projects.
 In this repository you can also find a [.editorconfig][2], [.jshintrc][3] and [.jscs.json][4] file that you can use to automatically enforce
 these rules (if your IDE supports it).
 
@@ -207,6 +206,91 @@ function foo(a, b, c, d, bla,
 }
 ```
 
+---------------------------------------------------------------
+
+## Commit message convention
+
+We use the [AngularJS Git Commit Msg Convention][8] because it enables us to:
+- automatically generate the changelog with pointers to the appropriate issues and commits
+- simple navigatie through the git history, focusing on important things while ignoring trivial changes
+
+
+### Format of the commit message:
+```bash
+<type>(<scope>): <subject>
+
+<body>
+
+<footer>
+```
+
+
+### Message subject (first line)
+First line cannot be longer than 70 characters, second line is always blank and
+other lines should be wrapped at 80 characters. The type and scope should
+always be lowercase as shown below.
+
+### Allowed `<type>` values:
+
+- **feat** (new feature for the user, not a new feature for build script)
+- **fix** (bug fix for the user, not a fix to a build script)
+- **docs** (changes to the documentation)
+- **style** (formatting, missing semi colons, etc; no production code change)
+- **refactor** (refactoring production code, eg. renaming a variable)
+- **test** (adding missing tests, refactoring tests; no production code change)
+- **chore** (updating grunt tasks etc; no production code change)
+
+### Example `<scope>` values:
+
+- list-parser
+- loader
+- extension-registering
+- showdown-options
+- etc.
+
+The `<scope>` can be empty (eg. if the change is a global or difficult
+to assign to a single component), in which case the parentheses are
+omitted.
+
+
+## Message body
+* uses the imperative, present tense: “change” not “changed” nor “changes”
+* includes motivation for the change and contrasts with previous behavior
+
+For more info about message body, see:
+
+* http://365git.tumblr.com/post/3308646748/writing-git-commit-messages
+* http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+
+
+## Message footer
+
+### Referencing issues
+Closed issues should be listed on a separate line in the footer prefixed with "Closes" keyword like this:
+```bash
+Closes #234
+```
+or in case of multiple issues:
+```bash
+Closes #123, #245, #992
+```
+### Breaking changes
+
+All breaking changes have to be mentioned in footer with the
+description of the change, justification and migration notes.
+```bash
+BREAKING CHANGE:
+
+`extension-registering` now is done throught a function call instead of assigning a property directly in the `showdown.extensions` object.
+
+To migrate your extension, use the function showdown.registerExtension() instead.
+```
+
+### Further reading
+For more information and examples, please read the [AngularJS Git Commit Msg Convention][8].
+
+---
+
 [1]: https://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
 [2]: https://github.com/showdownjs/code-style/blob/master/.editorconfig
 [3]: https://github.com/showdownjs/code-style/blob/master/.jshintrc
@@ -214,3 +298,4 @@ function foo(a, b, c, d, bla,
 [5]: http://editorconfig.org/
 [6]: http://jshint.com/
 [7]: http://jscs.info/
+[8]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit
