@@ -4,7 +4,7 @@ Shodown Code Style and Orientations
 Code-style for showdown and related projects.
 
 ## Introduction
-In this file, you can check the the code styling, rules and commit message convetions for showdown and it's related projects. It's roughly based on [Google JavaScript Style Guide][1] and [AngularJS Git Commit Msg Convention][8]. Using these rules is strongly advisable when contributing to showdown projects.
+In this file, you can check the the code styling, rules and commit message conventions for showdown and it's related projects. It's roughly based on [Google JavaScript Style Guide][1] and [AngularJS Git Commit Msg Convention][8]. Using these rules is strongly advisable when contributing to showdown projects.
 In this repository you can also find a [.editorconfig][2], [.jshintrc][3] and [.jscs.json][4] file that you can use to automatically enforce
 these rules (if your IDE supports it).
 
